@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+//Base theme
+//$body-background-color: #f6f6f6;
+//$header-background-color: #ededed;
+//$sidenav-background-color: #e1dfdf;
+//$secondary-sidenav-background-color: #efefef;
+$body-background-color: white;
+$header-background-color: white;
+$sidenav-background-color: white;
+$secondary-sidenav-background-color: white;
+
+$content-background-color: white;
+
+$color: #1c1916;
+$header-height: 2.5rem;
+$font-family: 'Quicksand', sans-serif;
+
+:root {
+  --menu-grid-template: 45px minmax(200px, 20vw) auto;
+}
+
+body {
+  background-color: $body-background-color;
+  color: $color;
+  font-family: $font-family;
+  font-weight: 500;
+  overflow: hidden;
+}
+.align-center {
+  align-items: center;
+}
+.flex {
+  display: flex;
+}
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex-1 {
+  flex: 1;
+}
+.flex-4 {
+  flex: 4;
+}
+.flex-11 {
+  flex: 11;
+}
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+
+.font-1rem {
+  font-size: 1rem;
+}
+
+.back-arrow {
+  padding: 5px;
+}

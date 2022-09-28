@@ -1,0 +1,33 @@
+.content-header {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  box-shadow: 10px 0 5px rgba(0, 0, 0, 0.5) 1;
+}
+.content-header-label {
+  flex: auto;
+}
+.content-fullscreen {
+  padding: 0 10px;
+  cursor: pointer;
+}
+.content-header-info {
+  justify-content: flex-end;
+  padding: 0 10px;
+  display: inherit;
+  div {
+    padding: 0 10px;
+  }
+}
+.kitab-notes-container .content-editor {
+  height: -webkit-calc(100vh - 100px);
+  height: -moz-calc(100vh - 100px);
+  height: calc(100vh - 100px);
+  overflow-y: auto;
+}
+
+.content-block {
+  width: 80%;
+  margin: auto;
+}

@@ -1,0 +1,52 @@
+.block-extra {
+  display: none;
+}
+.header1-block {
+  padding: 20px;
+  font-size: 2rem;
+}
+.header2-block {
+  padding: 20px;
+  font-size: 1.2rem;
+}
+.header3-block {
+  padding: 20px;
+  font-size: 0.8rem;
+}
+
+.header1-block:focus + .block-extra,
+.header2-block:focus + .block-extra,
+.header3-block:focus + .block-extra {
+  display: flex;
+  position: absolute;
+  top: -20px;
+  left: 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  box-shadow: rgba(15, 15, 15, 0.05) 0px 0px 0px 1px,
+    rgba(15, 15, 15, 0.1) 0px 3px 6px, rgba(15, 15, 15, 0.2) 0px 9px 24px;
+  z-index: 999;
+  background-color: white;
+  div {
+    padding: 8px;
+    cursor: pointer;
+    &:hover {
+      background-color: #f1f1f1;
+    }
+  }
+}
+.header-component-container {
+  position: relative;
+}
+.bold {
+  font-weight: bold;
+}
+.italics {
+  font-style: italic;
+}
+.underline {
+  text-decoration: undeline;
+}
+.strike {
+  text-decoration: line-through;
+}

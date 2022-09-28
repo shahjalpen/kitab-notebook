@@ -1,0 +1,30 @@
+@import '../../assets/theme/theme.scss';
+
+div.verticle-dots-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.verticle-dots {
+    position: relative;
+    background: transparent;
+    width: 10px;
+    height: 31px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+div.verticle-dots:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 0.5px;
+    height: 0.5px;
+    margin-left: -1px;
+    margin-top: -1px;
+    background-color: black;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px black, 0 5px 0 1px black, 0 -5px 0 1px black;
+}

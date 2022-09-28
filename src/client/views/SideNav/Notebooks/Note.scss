@@ -1,0 +1,18 @@
+@import "../../../assets/theme/theme.scss";
+
+.back-arrow {
+  cursor: pointer;
+  padding: 10px 5px !important;
+}
+.notebook-selected-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .search-wrapper {
+    width: 100%;
+  }
+}
+.notes-slider {
+  position: relative;
+  height: 100%;
+}

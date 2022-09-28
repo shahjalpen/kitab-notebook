@@ -1,0 +1,85 @@
+@import '../../assets/theme/theme.scss';
+
+.secondary-sidenav-container {
+  width: 18vw;
+  min-width: 200px;
+  height: 100vh;
+  box-shadow: 0px 0 3px rgba(0, 0, 0, 0.5);
+  //background-color: $secondary-sidenav-background-color;
+}
+
+.secondary-search-wrapper {
+  padding: 10px 0;
+}
+
+.padding-10px {
+  padding: 10px;
+}
+
+.secondary-sidenav {
+  height: 100vh;
+  position: relative;
+  //box-shadow: 1px -10px 9px 1px black;
+}
+
+.secondary-sidenav-menu {
+  padding: 10px;
+  display: grid;
+  grid-column-gap: 0;
+  grid-template-columns: auto;
+  grid-row-gap: 10px;
+}
+
+.secondary-sidenav-info {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+.secondary-sidenav-add {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  cursor: pointer;
+  i.bx {
+    font-size: 2rem;
+  }
+}
+
+.horizontal-divider {
+  margin: 10px;
+  border-top: 1px solid #a6a6a6;
+}
+
+.add-sort-filter-panel {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: auto 40px 40px;
+}
+
+.add,
+.sort,
+.filter {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  i {
+    cursor: pointer;
+  }
+}
+
+.add {
+  justify-content: flex-start;
+}
+
+//Icon size
+.bx {
+  font-size: 1.5rem;
+}
+
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}

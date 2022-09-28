@@ -1,0 +1,12 @@
+@import "../../assets/theme/theme.scss";
+
+.side-menu-container {
+  display: flex;
+  background: -webkit-linear-gradient(
+    83deg,
+    #465b98 0%,
+    #69347f 43%,
+    #11253b 100%
+  );
+  color: white;
+}

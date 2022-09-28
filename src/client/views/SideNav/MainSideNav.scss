@@ -1,0 +1,93 @@
+@import "../../assets/theme/theme.scss";
+
+.main-sidenav-container {
+  width: 15vw;
+  min-width: 165px;
+  box-shadow: 0px 0 3px rgba(0, 0, 0, 0.5);
+  transition: width 0.4s;
+  position: relative;
+  //background-color: $sidenav-background-color;
+
+  .main-sidenav {
+    width: 100%;
+  }
+
+  .disabled {
+    cursor: not-allowed !important;
+  }
+
+  .main-sidenav-menu {
+    padding: 10px;
+    display: grid;
+    grid-column-gap: 0;
+    grid-template-columns: auto;
+    grid-row-gap: 10px;
+  }
+  .main-sidenav-menuitem {
+    position: relative;
+    display: grid;
+    grid-template-columns: 30px auto;
+    cursor: pointer;
+  }
+
+  .main-sidenav-settings {
+    padding: 10px;
+    position: absolute;
+    bottom: 0px;
+    cursor: pointer;
+  }
+  .tooltip {
+    display: none;
+  }
+
+  &.collapse {
+    width: 45px;
+    min-width: 45px;
+    .header {
+      grid-template-columns: auto;
+    }
+    .logo {
+      display: none;
+    }
+    .user-details {
+      justify-content: flex-start;
+    }
+    .main-search-icon {
+      position: relative;
+      text-align: right;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 13px;
+    }
+    .menu-item-label {
+      display: none;
+    }
+    .main-sidenav-menuitem,
+    .main-search-icon {
+      &:hover {
+        .tooltip {
+          display: block;
+          position: absolute;
+          top: 0px;
+          display: block;
+          font-size: 0.9rem;
+          left: 35px;
+          padding: 5px 10px;
+          background: gray;
+          z-index: 1;
+          border-radius: 0 2px 2px 0;
+          border: 1px solid rgba(0, 0, 0, 0.1);
+          border-left: 0;
+          min-width: 75px;
+          box-shadow: 2px 0 3px rgba(0, 0, 0, 0.1);
+        }
+      }
+    }
+  }
+}
+
+//Icon size
+.bx {
+  font-size: 1.5rem;
+}

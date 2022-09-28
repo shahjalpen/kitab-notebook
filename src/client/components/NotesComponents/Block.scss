@@ -1,0 +1,136 @@
+@import "../../assets/theme/theme.scss";
+
+.block {
+  margin: 5px auto;
+  padding: 10px;
+  max-width: 90%;
+  position: relative;
+
+  &.block:focus {
+    outline: 1px solid #f1f1f1;
+  }
+
+  .block-extra {
+    display: none;
+  }
+
+  &.text-block {
+    font-size: 1rem;
+    padding: 20px;
+  }
+  &.list-block {
+    padding: 20px;
+  }
+}
+
+.image-block-add-image {
+  width: 150px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  height: 30px;
+  background: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.custom-box {
+  overflow: visible;
+}
+.custom-handle {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: #1153aa;
+  opacity: 0.75;
+  border-radius: 4px;
+}
+.custom-handle-sw {
+  bottom: -4px;
+  left: -4px;
+  cursor: sw-resize;
+}
+.custom-handle-se {
+  bottom: -4px;
+  right: -4px;
+  cursor: se-resize;
+}
+.custom-handle-nw {
+  top: -4px;
+  left: -4px;
+  cursor: nw-resize;
+}
+.custom-handle-ne {
+  top: -4px;
+  right: -4px;
+  cursor: ne-resize;
+}
+.custom-handle-w,
+.custom-handle-e {
+  top: 50%;
+  margin-top: -4px;
+  cursor: ew-resize;
+}
+.custom-handle-w {
+  left: -4px;
+}
+.custom-handle-e {
+  right: -4px;
+}
+.custom-handle-n,
+.custom-handle-s {
+  left: 50%;
+  margin-left: -4px;
+  cursor: ns-resize;
+}
+.custom-handle-n {
+  top: -4px;
+}
+.custom-handle-s {
+  bottom: -4px;
+}
+
+.react-resizable-handle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  bottom: 0;
+  right: 0;
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/Pg08IS0tIEdlbmVyYXRvcjogQWRvYmUgRmlyZXdvcmtzIENTNiwgRXhwb3J0IFNWRyBFeHRlbnNpb24gYnkgQWFyb24gQmVhbGwgKGh0dHA6Ly9maXJld29ya3MuYWJlYWxsLmNvbSkgLiBWZXJzaW9uOiAwLjYuMSAgLS0+DTwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DTxzdmcgaWQ9IlVudGl0bGVkLVBhZ2UlMjAxIiB2aWV3Qm94PSIwIDAgNiA2IiBzdHlsZT0iYmFja2dyb3VuZC1jb2xvcjojZmZmZmZmMDAiIHZlcnNpb249IjEuMSINCXhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiDQl4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjZweCIgaGVpZ2h0PSI2cHgiDT4NCTxnIG9wYWNpdHk9IjAuMzAyIj4NCQk8cGF0aCBkPSJNIDYgNiBMIDAgNiBMIDAgNC4yIEwgNCA0LjIgTCA0LjIgNC4yIEwgNC4yIDAgTCA2IDAgTCA2IDYgTCA2IDYgWiIgZmlsbD0iIzAwMDAwMCIvPg0JPC9nPg08L3N2Zz4=);
+  background-position: bottom right;
+  padding: 0 3px 3px 0;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  box-sizing: border-box;
+  cursor: se-resize;
+}
+.box {
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  overflow: hidden;
+  position: relative;
+  margin: 20px;
+}
+
+::-webkit-scrollbar {
+  width: 1.5em; /* Total width including `border-width` of scrollbar thumb */
+  height: 0;
+}
+::-webkit-scrollbar-thumb {
+  height: 1em;
+  border: 0.5em solid rgba(0, 0, 0, 0); /* Transparent border together with `background-clip: padding-box` does the trick */
+  background-clip: padding-box;
+  border-radius: 1em;
+  background-color: rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.025);
+}
+::-webkit-scrollbar-button {
+  width: 0;
+  height: 0;
+  display: none;
+}
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
